@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
 
-import { InputGroupDemoComponent } from './input-group-demo.component';
+import { InputGroupDemoComponent } from './input-group-demo/input-group-demo.component';
 
 @NgModule({
   declarations: [
