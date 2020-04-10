@@ -10,7 +10,7 @@ export class CountryService {
   ) { }
 
   getCountries() {
-    return this.http.get<any>('./countries.json')
+    return this.http.get<any>('assets/countries.json')
       .toPromise()
       .then(res => res.data)
       .then(data => data);
