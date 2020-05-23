@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { SelectItem } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-primeng-practice';
+  public routes: SelectItem[];
+  public selectedRoute: string;
+
+  constructor(
+    private router: Router,
+  ) {
+    this.routes = [
+      { label: 'Table', value: '/primeNgTable' },
+      { label: 'Table', value: '/primeNgTable2' },
+    ];
+
+    this.selectedRoute = this.routes.find(Boolean).value;
+    this.onSelectChange(this.selectedRoute);
+  }
+
+  onSelectChange(value: string) {
+    this.router.navigate([value]);
+  }
 }

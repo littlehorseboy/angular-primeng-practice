@@ -1,0 +1,8 @@
+<p-selectButton
+  [options]="routes"
+  [(ngModel)]="selectedRoute"
+  (ngModelChange)="onSelectChange(selectedRoute)"
+>
+</p-selectButton>
+
+<router-outlet></router-outlet>
