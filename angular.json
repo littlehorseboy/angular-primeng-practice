@@ -137,6 +137,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-primeng-practice"
+    }
+  },
+  "defaultProject": "angular-primeng-practice",
+  "cli": {
+    "analytics": false
+  }
 }

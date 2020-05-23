@@ -5,8 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { InputGroupDemoModule } from './input-group-demo/input-group-demo.module';
-import { AutoCompleteDemoModule } from './auto-complete-demo/auto-complete-demo.module';
 
 @NgModule({
   declarations: [
@@ -17,8 +15,6 @@ import { AutoCompleteDemoModule } from './auto-complete-demo/auto-complete-demo.
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    InputGroupDemoModule,
-    AutoCompleteDemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
